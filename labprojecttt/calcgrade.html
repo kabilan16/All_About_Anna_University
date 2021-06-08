@@ -1,0 +1,107 @@
+<html>
+<head>
+<style>
+body{
+background-color:skyblue;
+font-family:verdana;
+font-color:white;
+text-align:center;
+}
+button{
+background-color:lime;
+padding:15px;
+}
+div{
+background-color:tomato;
+}
+</style>
+</head>
+<body>
+<div>
+Enter number 1:<input id="N1" value=""/>
+<br><br>
+Enter number 2:<input id="N2" value=""/>
+</div>
+<hr>
+<div>
+<button onclick="addnumbers()">Add</button>
+<button onclick="subtractnumbers()">Sub</button>
+<button onclick="multiplynumbers()">Mul</button>
+<button onclick="dividenumbers()">Div</button>
+</div>
+<br><br>
+<div>
+<p id="demo1"></p>
+</div>
+<hr>
+<div>
+<p id="demo2"></p>
+</div>
+<hr>
+<div>
+<p id="demo3"></p>
+</div>
+<hr>
+<div>
+<p id="demo4"></p>
+</div>
+<hr>
+<script>
+function addnumbers()
+{
+var a,b;
+a=document.getElementById("N1").value;
+b=document.getElementById("N2").value;
+a=Number(a);
+b=Number(b);
+document.getElementById("demo1").innerHTML="sum=" +(a+b);
+}
+function subtractnumbers()
+{
+var a,b;
+a=document.getElementById("N1").value;
+b=document.getElementById("N2").value;
+a=Number(a);
+b=Number(b);
+document.getElementById("demo2").innerHTML="difference="+(a-b);
+}
+function multiplynumbers()
+{
+var a,b;
+a=document.getElementById("N1").value;
+b=document.getElementById("N2").value;
+a=Number(a);
+b=Number(b);
+document.getElementById("demo3").innerHTML="product="+(a*b);
+}
+function dividenumbers()
+{
+var a,b;
+a=document.getElementById("N1").value;
+b=document.getElementById("N2").value;
+a=Number(a);
+b=Number(b);
+document.getElementById("demo4").innerHTML="Divide="+(a/b)
+}
+</script>
+<table border="1">
+<tr><th>A block</th>
+<th>B block</th>
+<th>c block</th>
+<td colspan="2">d block</td>
+</tr>
+<tr><td>e block</td>
+<td>f block</td>
+<td rowspan="2">g block</td>
+<th rowspan="2"> h block</td>
+<td rowspan="2">i block</td>
+<td colspan="2">j block</td>
+</tr>
+<tr><td>s block</td>
+<th>welcome</th>
+<td colspan="2">k block</td>
+<td rowspan="2"> l block</td>
+<td colspan="2">m block</td>
+</tr>
+</table>
+</body>
